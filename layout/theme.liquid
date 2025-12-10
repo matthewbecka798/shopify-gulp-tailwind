@@ -7,7 +7,8 @@
 		{{ 'vendor.min.css' | asset_url | stylesheet_tag }} 
 		{{ 'application.css' | asset_url | stylesheet_tag }} 
 		{{ 'vendor.min.js' | asset_url | script_tag }}
-	</head>
+	  {% render 'rapid-search-settings' %}
+</head>
 <body>
 	{% section 'header' %}
 	<main role="main">
